@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/main/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <title>
+        <%- title %>
+    </title>
+</head>
+
+<body>
+    <section class="main-container">
+        <%- include('parts/header')%>
+        <%- include('parts/navbar')%>
+        <main>
+            <section class="middle">
+                <div class="container">
+                    <div class="results-items-amount">
+                        <div class="results-item-amount-description">
+                        </div>
+                        <div class="results-item-amount-content">
+                            <select name="options-filter" id="options-filter">
+                                <option value="">Escolha uma opção</option>
+                                <option value="cheap">Menor Preço</option>
+                                <option value="expensive">Maior Preço</option>
+                            </select>
+                            <button type="button" class="middle-filter">
+                                <span class="material-icons-round">
+                                    filter_alt
+                                </span>
+                                <%- filter %>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="content-card"></div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <div class="modal-box">
+        <%- include('parts/modal') %>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/script.js" type="text/javascript"></script>
+    <script src="scripts/select.js"></script>
+    <script src="scripts/modal.js"></script>
+</body>
+
+</html>

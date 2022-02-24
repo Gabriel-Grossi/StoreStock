@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/login/login.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <title>
+        <%- title %>
+    </title>
+</head>
+
+<body>
+    <main>
+        <section class="login-box">
+            <div class="login-box-img">
+                <img src="../assets/favicon.svg" alt="A" >
+            </div>
+            <div class="login-box-form">
+                <h2>Login</h2>
+                <small>Preencha os campos abaixo para ter acesso ao StoreStock</small>
+                <fieldset>
+                    <label for="user">Usuário</label>
+                    <input type="text" name="user" class="user" required>
+                    <label for="password">Senha</label>
+                    <input type="password" name="password" class="password" required >
+                    <button type="submit" id="btnlogin">
+                        <span class="material-icons-round">
+                            login
+                        </span>
+                        Entrar
+                    </button>
+                </form>
+            </div>
+            
+        </section>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../scripts/login.js"></script>
+</body>

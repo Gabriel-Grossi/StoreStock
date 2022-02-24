@@ -1,0 +1,43 @@
+@import "colors";
+@import "global";
+
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    filter: drop-shadow(.125rem .25rem .325rem $redirectDropShadow);
+    animation-name: icon-scale;
+    animation-duration: 10s;
+}
+
+@keyframes icon-scale {
+    0% {
+        transform: scale(.25);
+    }
+
+    20% {
+        transform: scale(.35);
+    }
+
+    40% {
+        transform: scale(.25);
+    }
+
+    60% {
+        transform: scale(.35);
+    }
+
+    80% {
+        transform: scale(.25);
+    }
+
+    100% {
+        transform: scale(.35);
+    }
+}

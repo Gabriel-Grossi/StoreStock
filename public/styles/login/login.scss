@@ -1,0 +1,95 @@
+@import "../colors";
+@import "../global";
+
+body{
+    height: 100vh !important;
+    background: $softSilver;
+    main{
+        align-items: center; 
+        display: flex; 
+        flex-direction: column;
+        height: 100%; 
+        justify-content: center;
+        .login-box{
+            background: $white;
+            border-radius: 1rem;
+            display:flex; 
+            filter: drop-shadow(2px 4px 6px $headerDropShadow); 
+            height: 35rem;
+            width: 50rem;
+            .login-box-img{
+                width: 40%;
+                background: repeating-linear-gradient(45deg, $darkestBlue, $blueHeader 6.25rem);
+                border-radius: 1rem 0 0 1rem; 
+                display: flex; 
+                flex-direction: column; 
+                justify-content: center; 
+                align-items: center;
+                img{
+                    width: 75%;
+                    &:hover{
+                        animation: upDown 5s;
+                    }
+                }
+            }
+            .login-box-form{
+                display: flex;  
+                justify-content: center; 
+                flex-direction: column;
+                width: 60%;
+                padding: 4rem;
+                gap: 1rem; 
+                fieldset{
+                    border: none;
+                    input{
+                       display: flex;
+                       flex-direction: column;
+                       justify-content: center;
+                       padding: .125rem .25rem;
+                       margin-bottom: 1rem;
+                       width: 70%;
+                       &:focus{
+                           outline: none;
+                       }
+                    }
+                    label{
+                        color: $darkestBlue;
+                        font-weight: 400;
+                    }
+                    button{
+                        width: 40%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding: .5rem 1rem;
+                        background: $blueButton;
+                        border: none;
+                        color: $white;
+                        gap: .5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+@keyframes logoLogin{
+    0%{
+        transform: rotate3d(0);
+    }
+    100%{
+        transform: rotate3d(.5, .51, .51, 25deg);
+
+    }
+}
+
+@keyframes upDown{
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateY(0) rotateY(360deg);
+    }
+    100%{
+        transform: translateY(-3rem);
+    }
+}

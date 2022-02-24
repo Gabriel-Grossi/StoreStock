@@ -1,0 +1,46 @@
+<div class="modal">
+    <div class="modal-content">
+        <div class="modal-option-group">
+            <p>Escolha uma das opções a seguir e depois clique em <b><%- filter %></b></p>
+            <details>
+                <summary>Filtro por categoria</summary>
+                <div class="modal-option">
+                    <input type="radio" name="filter-option" id="drink-food">
+                    <label for="drink-food">Bebidas</label>
+                </div>
+                <div class="modal-option">
+                    <input type="radio" name="filter-option" id="dessert-food">
+                    <label for="dessert-food">Doces</label>
+                </div>
+                <div class="modal-option">
+                    <input type="radio" name="filter-option" id="bakery-food">
+                    <label for="bakery-food">Confeitaria</label>
+                </div>
+                <div class="modal-option">
+                    <input type="radio" name="filter-option" id="canned-food">
+                    <label for="canned-food">Enlatados</label>
+                </div>
+                <div class="modal-option">
+                    <input type="radio" name="filter-option" id="other-food">
+                    <label for="other-food">Outros</label>
+                </div>
+            </details>
+            <details>
+                <summary>Filtro por quantidade</summary>
+                <div class="modal-option">
+                    <input type="radio" name="filter-price" id="ltTwenty-amount">
+                    <label for="ltTwenty-amount">Até 20</label>
+                </div>
+                <div class="modal-option">
+                    <input type="radio" name="filter-price" id="twentyone-forty-amount">
+                    <label for="twentyone-forty-amount">21 a 40</label>
+                </div>
+                <div class="modal-option">
+                    <input type="radio" name="filter-price" id="gtForty-amount">
+                    <label for="gtForty-amount">41+</label>
+                </div>
+            </details>
+        </div>
+        <button id="filterBtn"><%- filter %></button>
+    </div>
+</div>

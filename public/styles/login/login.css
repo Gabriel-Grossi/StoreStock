@@ -1,0 +1,187 @@
+/*Drop-shadow*/
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100vh !important;
+  background: #e1e1e1;
+}
+
+body main {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main .login-box {
+  background: white;
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.75));
+          filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.75));
+  height: 35rem;
+  width: 50rem;
+}
+
+body main .login-box .login-box-img {
+  width: 40%;
+  background: repeating-linear-gradient(45deg, #041247, #0a3cdf 6.25rem);
+  border-radius: 1rem 0 0 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .login-box .login-box-img img {
+  width: 75%;
+}
+
+body main .login-box .login-box-img img:hover {
+  -webkit-animation: upDown 5s;
+          animation: upDown 5s;
+}
+
+body main .login-box .login-box-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 60%;
+  padding: 4rem;
+  gap: 1rem;
+}
+
+body main .login-box .login-box-form fieldset {
+  border: none;
+}
+
+body main .login-box .login-box-form fieldset input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: .125rem .25rem;
+  margin-bottom: 1rem;
+  width: 70%;
+}
+
+body main .login-box .login-box-form fieldset input:focus {
+  outline: none;
+}
+
+body main .login-box .login-box-form fieldset label {
+  color: #041247;
+  font-weight: 400;
+}
+
+body main .login-box .login-box-form fieldset button {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: .5rem 1rem;
+  background: #09278a;
+  border: none;
+  color: white;
+  gap: .5rem;
+}
+
+@-webkit-keyframes logoLogin {
+  0% {
+    -webkit-transform: rotate3d(0);
+            transform: rotate3d(0);
+  }
+  100% {
+    -webkit-transform: rotate3d(0.5, 0.51, 0.51, 25deg);
+            transform: rotate3d(0.5, 0.51, 0.51, 25deg);
+  }
+}
+
+@keyframes logoLogin {
+  0% {
+    -webkit-transform: rotate3d(0);
+            transform: rotate3d(0);
+  }
+  100% {
+    -webkit-transform: rotate3d(0.5, 0.51, 0.51, 25deg);
+            transform: rotate3d(0.5, 0.51, 0.51, 25deg);
+  }
+}
+
+@-webkit-keyframes upDown {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateY(0) rotateY(360deg);
+            transform: translateY(0) rotateY(360deg);
+  }
+  100% {
+    -webkit-transform: translateY(-3rem);
+            transform: translateY(-3rem);
+  }
+}
+
+@keyframes upDown {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateY(0) rotateY(360deg);
+            transform: translateY(0) rotateY(360deg);
+  }
+  100% {
+    -webkit-transform: translateY(-3rem);
+            transform: translateY(-3rem);
+  }
+}
+/*# sourceMappingURL=login.css.map */
