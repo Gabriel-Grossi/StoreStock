@@ -1,4 +1,4 @@
-![Logo - StoreStock](/public/assets/logo.svg "Logo StoreStock")
+![Logo - StoreStock](/public/assets/logoalt.svg "Logo StoreStock")
 
 ## About
 
